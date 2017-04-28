@@ -1,0 +1,103 @@
+.productEditor{
+	left: 5vw;
+	width: 80vw;
+	top: 8vh;
+	height: 505px;
+}
+	.uiNode.productEditor [role=content] > header header{
+		left: 38.01%;
+		position: absolute;
+		top: 0;
+		height: 100%;
+	}
+	.uiNode.productEditor [role=content] > article{
+		text-align: left;
+		bottom: 0
+	}
+	.uiNode.productEditor [role=content] > article > section.col1,
+	.uiNode.productEditor [role=content] > article > section.col2,
+	.uiNode.productEditor [role=content] > article > section.col3,
+	.uiNode.productEditor [role=content] > article > section.col4{
+		display: inline-block;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 30%;
+		vertical-align: top;
+		margin: 0;
+		padding:  2em 0 0 0;
+		box-sizing: border-box;
+	}
+	.uiNode.productEditor [role=content] > article > section.col1{
+		background-color: #e8e8e8;
+		width: 25%;
+	}
+		.uiNode.productEditor [role=content] > article > section.col1 label{
+			color: #222;
+			width: 40%
+		}
+	.uiNode.productEditor [role=content] > article > section.col2{
+		width: 13%;
+   		border-right: 1px solid #ccc;
+		padding-left: 5px;
+		box-sizing: border-box;
+    	background: #e8e8e8;
+	}
+	.uiNode.productEditor [role=content] > article > section.col2 ul{
+		text-align: left;
+		padding: 0;
+		margin: 0;
+		border-width: 0 1px;
+		width: 100%
+	}
+		.productEditor .col2 li{
+			list-style: none;
+			padding: 8px;
+			margin: 0 -1px 0 0;
+			display: block;
+			text-align: center;
+			vertical-align: middle;
+			cursor: pointer;
+			background-color: #444;
+			color: #e5e5e5;
+			font-size: .9em;
+			border-bottom: 1px solid #333;
+			border-left: 1px solid #333;
+			border-right: 8px solid transparent;
+			font-style: italic;
+			transition: margin .3s, border .3s;
+			position: relative;
+		}
+		.productEditor .col2 li[data-enable="1"]{
+			background-color: #00900c;
+			font-style: normal;
+			color: #fff;
+		}
+		.productEditor .col2 li[data-enable="1"][data-available="0"]{
+			background-color: #bb4e01;
+		}
+		.productEditor .col2 li.selected{
+			border-color: #222;
+		}
+			.productEditor .col2 li.selected:before{
+				color: #fff;
+				font-family: 'FontAwesome';
+				font-size: .85em;
+				content: '\f040';
+				position: absolute;
+				top: 35%;
+				left: 4px;
+			}
+		.productEditor .needSaving{
+			display: none;
+		}
+		.productEditor .col2 li:first-child{
+			border-top: 1px solid #333;
+		}
+		.productEditor .col2 li:hover{
+			background-color: #666 !important;
+		}
+
+#productAdminproducts article ul.customlist li[data-available="0"]{
+	color: #c72e00
+}
